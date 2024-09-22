@@ -1,0 +1,12 @@
+{
+    "default_configuration": {
+      "image": "debian:bookworm-slim",
+      "features": {
+        "create-remote-user": {
+            "userUid": "3000",
+            "userGid": "3000"
+        }
+      },
+      "remoteUser": "remote"
+    },
+  }
