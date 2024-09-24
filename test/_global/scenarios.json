@@ -1,13 +1,12 @@
 {
-    "color_and_hello": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "all": {
+        "image": "debian:bookworm-slim",
         "features": {
-            "color": {
-                "favorite": "purple"
-            },
-            "hello": {
-                "greeting": "Greetings"
-            }
-        }
-    }
+          "create-remote-user": {
+              "userUid": "3000",
+              "userGid": "3000"
+          }
+        },
+        "remoteUser": "remote"
+      }
 }

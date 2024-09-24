@@ -1,0 +1,29 @@
+{
+    "id": "create-remote-user",
+    "version": "1.0.0",
+    "name": "Create remote user with specific uid and gid",
+    "description": "Creates user with specified uid and gid and remove if user with the specified uid already presents.",
+    "options": {
+        "userUid": {
+            "type": "string",
+            "proposals": [
+                "1001",
+                "automatic"
+            ],
+            "default": "1001",
+            "description": "Enter UID for non-root user"
+        },
+        "userGid": {
+            "type": "string",
+            "proposals": [
+                "1001",
+                "automatic"
+            ],
+            "default": "1001",
+            "description": "Enter GID for non-root user"
+        }
+    },
+    "keywords": [
+        "non-root user"
+    ]
+}
