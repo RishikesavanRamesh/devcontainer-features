@@ -1,0 +1,8 @@
+{
+    "default_configuration": {
+        "image": "debian:bookworm-slim",
+        "features": {
+          "add-gh-cli": {}
+        }
+      }
+  }

@@ -5,7 +5,8 @@
           "create-remote-user": {
               "userUid": "3000",
               "userGid": "3000"
-          }
+          },
+          "add-gh-cli": {}
         },
         "remoteUser": "remote"
       }

@@ -1,0 +1,11 @@
+{
+    "id": "add-gh-cli",
+    "version": "1.0.0",
+    "name": "Add Github cli",
+    "description": "Install Github cli",
+    "options": {
+    },
+    "keywords": [
+        "ci cli GitOps"
+    ]
+}
