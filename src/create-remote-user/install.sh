@@ -14,7 +14,7 @@ fi
 
 # Create the new user
 echo "Creating user $_REMOTE_USER with UID $USER_UID and GID $USER_GID..."
-useradd -M "$_REMOTE_USER" && \
+useradd -m "$_REMOTE_USER" && \
 echo "$_REMOTE_USER:$_REMOTE_USER" | chpasswd
 
 # Add user to sudo group
