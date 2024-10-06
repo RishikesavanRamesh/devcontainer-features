@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 set -e
 
 source functions.sh
@@ -14,8 +13,11 @@ fi
 
 # Create the new user
 echo "Creating user $_REMOTE_USER with UID $USER_UID and GID $USER_GID..."
-useradd -m "$_REMOTE_USER" && \
+useradd -m -u "$USER_UID" -g "$USER_GID" "$_REMOTE_USER" && \
 echo "$_REMOTE_USER:$_REMOTE_USER" | chpasswd
+
+# Set home directory permissions
+chown -R "$_REMOTE_USER:$_REMOTE_USER" /home/"$_REMOTE_USER"
 
 # Add user to sudo group
 if ! id -nG "$_REMOTE_USER" | grep -qw "sudo"; then
